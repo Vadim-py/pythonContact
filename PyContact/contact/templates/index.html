@@ -1,5 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>dwdd</h2>
+<form method="POST">
+    {% csrf_token %}
+    <table>
+        {{ form }}
+    </table>
+    <input type="submit" value="Send" >
+</form>
+<h3>Name: {{ name }}</h3>
+<h3>Last Name: {{ last_name }}</h3>
+
+<h3>Phone: {{ phone }}</h3>
+<h3>Email: {{ email }}</h3>
 {% endblock %}

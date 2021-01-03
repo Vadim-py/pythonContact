@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for c in con %}
+    <table>
+    <tr>
+        <hr><a>Name: {{ c.surname }}</a>
+        <br>
+        <a>Last name: {{ c.last_name }}</a>
+        <br>
+        <a>Email: {{ c.email }}</a>
+        <br>
+        <a>Phone {{ c.phone }}</a>
+    </tr>
+    </table>
+{% endfor %}
+{% endblock %}
